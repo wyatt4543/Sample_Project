@@ -45,8 +45,8 @@ let greeting3 = 'Hi There';
 console.log(greeting1 + greeting2 + greeting3);
 
 let score2 = 50;
-console.log('Half of 100 is $(100 / 2)');
-console.log('your score is $(score2)');
+console.log(`Half of 100 is ${100 / 2}`);
+console.log(`your score is ${score2}`);
 
 // Escape Sequences
 console.log("Line1\nLine2");
