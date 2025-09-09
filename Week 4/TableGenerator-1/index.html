@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table Generator</title>
-</head>
-<body>
-    <h1>Table Generator</h1>
+    <title>Multiplication Table</title>
+  </head>
+  <body>
+    <h1>Multiplication Table Generator</h1>
     <input type="number" id="numInput" placeholder="Enter a number" />
     <button onclick="generateTable()">Generate</button>
-    <div class="output"></div>
+    <div id="output"></div>
+
     <script>
+      function generateTable() {
         let n = document.getElementById("numInput").value;
         const output = document.getElementById("output");
-        output.innerHTML = "";
+        output.innerHTML = ""; // clear previous table
 
-        let i = 1
+        let i = 1;
         while (i <= 10) {
-            const p = document.createElement("p");
-            p.textContent = `${n} X ${i} = ${n * i}`;
-            output.appendChild(p);
-            i++;
+          const p = document.createElement("p");
+          p.textContent = `${n} × ${i} = ${n * i}`;
+          output.appendChild(p);
+          i++;
         }
+      }
     </script>
-</body>
+  </body>
 </html>
