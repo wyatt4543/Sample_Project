@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Manager</title>
+  </head>
+  <body>
+      <h1>Contact List</h1>
+      <input
+             type="text"
+             id="name"
+             placeholder="Please enter your name and number"
+      />
+
+      <button onclick="addContact()">Add contact</button>
+
+      <h3>Search Contacts</h3>
+      <input
+             type="text"
+             id="search"
+             placeholder="Search by name"
+             oninput="searchContacts()"
+      />
+
+      <h3>Sort Contacts</h3>
+      <button onclick="sortContacts()">Sort Contacts</button>
+
+      <ul id="contact-list"></ul>
+
+      <script src="js/array.js"></script>
+  </body>
+</html>
