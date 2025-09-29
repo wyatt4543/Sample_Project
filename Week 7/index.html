@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 7 - 1</title>
+  </head>
+  <body>
+
+      <div class="conatainer">
+          <h1>Shopping Cart</h1>
+          <div id="cart-items">
+              <!-- cart items will be displayed in here -->
+          </div>
+          <h2>Total Cost: $ <span id="total-cost">0</span></h2>
+          <h2>Total Cost with discount: $ <span id="discount-total">0</span></h2>
+
+          <div>
+              <h3>Add Item to cart</h3>
+              <label for="item-name">Item-name</label>
+              <input type="text" id="item-name" placeholder="Enter item name" />
+
+              <label for="item-price">Item-Price</label>
+              <input 
+                     type="text"
+                     placeholder="Enter Price of the item"
+                     id="item-price"
+              />
+              
+              <label for="item-quantity">Item Quantity </label>
+              <input type="text" id="item-quantity" placeholder="Enter quantity" />
+
+              <button id="add-item-btn">Add Item</button>
+          </div>
+      </div>
+      <script src="cart.js"></script>
+  </body>
+</html>
